@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url(menu.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+   
+background: rgb(197, 250, 52);
+}
+
+header{
+    width: 100%;
+    height: 70px;
+   background: rgba(20, 16, 49, 1);
+    color: rgb(197, 250, 52);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+h1{
+    float: left;
+    color: rgb(197, 250, 52);
+    padding: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+}
+
+header .contenedor{
+    display: table;
+}
+
+/* BANNER */
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+#banner{
+    margin-top: 50px;
+    position: relative;
+}
+
+#banner img{
+    width: 100%;
+    height: 100%;
+}
+
+#banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+
+}
+
+#banner h2, p{
+    font-size: 20px;
+    text-align: center; 
+    color: rgba(20, 16, 49, 1);
+    font-family: 'Rubik', sans-serif;
+  
+}
+#banner p{
+    background-color: rgba(20, 16, 49, 1);
+    color: rgb(197, 250, 52);
+}
+
+#banner a{
+    display: block;
+    width: 100px;
+    color: rgba(20, 16, 49, 1);
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    border: 3px solid rgba(20, 16, 49, 1);
+    margin-left: 26%;
+    background-color:rgb(197, 250, 52, 1);
+    
+}
+
+#banner a:hover{
+    background: rgba(51, 51, 51, 0.5);
+}
+
+@media(min-width:480px){
+    #banner h2{
+        font-size: 80px;
+    }
+    #banner p{
+        font-size: 30px;
+    }
+    #banner a{
+        margin-top: 25px;
+    }
+}
+
+@media(min-width:768px){
+    #banner{
+        height: 600px;
+        overflow: hidden;
+    }
+    #banner img{
+        height: auto;
+        margin-top: -100px;
+    }
+
+    
+}
+
+@media(min-width:1024px){
+   
+    #banner img{
+        margin-top: -200px;
+    }
+
+    
+}
+
+
+#Bienvenidos{
+    /* text-align: center; */
+    padding: 35px;
+    padding-left: 20%;
+    font-size: 25px;
+    background: rgb(197, 250, 52);
+    font-family: 'Rubik', sans-serif;
+    color: rgba(20, 16, 49, 1);
+}
+
+
+/* SECTION DEL BLOG, DONDE ESTÁN LAS IMAGENES */
+#blog h3{
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: rgba(20, 16, 49, 1);
+}
+#blog h4{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(20, 16, 49, 1);
+}
+#blog{
+    background: rgb(197, 250, 52);
+}
+
+#blog .contenedor{
+    display: flex;
+    justify-content: center;
+   flex-wrap: wrap;
+}
+
+#blog article{
+    margin: 5px;
+    
+}
+
+#blog img{
+    
+    width: 100%;
+    max-width: 320px;
+}
+/* SECCION DE OMETAS Y OBJETIVOS, US */
+
+
+#us{
+    background:rgba(20, 16, 49, 1);
+    color: rgb(197, 250, 52);
+    padding: 35px;
+    text-align: center;
+}
+#us h3 {
+   font-size: 40px;
+   text-align: left;
+   font-family: 'Rubik', sans-serif;
+}
+#us h4{
+    
+    font-family: 'Open Sans', sans-serif;
+}
+#us .contenedorr{
+    padding: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.metas h4{
+    width: 250px;
+    text-align: center;
+    font-size: 15px;
+  
+}
+.metass h4{
+    font-size: 20px;
+}
+
+
+
+
+
+.metas img{
+    width: 180px;
+    height: 180px;
+    margin: 40px;
+}
+.metas {
+   margin-left: 20px;
+}
+/* PARTE DE CONTACTOS, SECCION CORTA SOLO TIENE 3 LINEAS EN SI */
+    #contacto{
+        color: rgba(20, 16, 49, 1);
+        padding: 25px;
+    }
+    #contacto h3{
+        padding-left: 15%;
+        font-size: 35px;
+        font-family: 'Rubik', sans-serif;
+    }
+   .letras{
+       margin: 15px;
+       text-align: left;
+       margin-left: 15%;
+       font-size: 25px;
+       font-family: 'Open Sans', sans-serif;
+    }
+    #contacto .numeros{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+    .numeros h4{
+        padding: 40px;
+        font-size: 30px;
+        font-family: 'Open Sans', sans-serif;
+    }
+/* info, parte de las imagenes en circulos */
+#info{
+    background:rgba(20, 16, 49, 1);
+    color: rgb(197, 250, 52);
+    text-align: center;
+    padding: 25px;
+    font-family: 'Rubik', sans-serif;
+}
+#info h3{
+    text-align: left;
+    margin-left: 20%;
+    font-size: 40px;
+    
+}
+#info .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+ 
+}
+
+.info-pet{
+    margin: 20px;
+}
+
+.info-pet img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+/* para que las imagenes se agrupen en columnas, en plan de dos en dos, nada impar */
+@media (min-width:480px){
+  .info-pet{
+      width: 40%;
+  }
+}
+
+@media (min-width:1024px){
+    .info-pet{
+        width: auto;
+    }
+  }
+
+
+
+
+/* footer */
+
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+ 
+}
+
+
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    
+
+}
+.copy{
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+}
+.sociales a{
+    color: #333;
+    text-decoration: none;
+   
+}
+
+@media (min-width:1024px){
+    .contenedor{
+        width: 1000px;
+    }
+}
+
+@media (min-width:768px){
+   .sociales{
+       width: auto;
+   }
+   footer .contenedor{
+       justify-content: space-between;
+   }
+  }
